@@ -17,7 +17,8 @@ void printArray(int arr[],int size)
 int BinarySearch(int arr[],int size,int key)
 { 
     int start=0,end=size-1,mid;
-    mid=(start+end)/2;
+  //  mid=(start+end)/2;
+    mid=start+(end-start)/2;
     while(start<=end)
     {
         if(arr[mid]==key)
@@ -32,8 +33,8 @@ int BinarySearch(int arr[],int size,int key)
         {
             end=mid-1;
         }
-        mid=(start +end)/2;
-
+        //mid=(start +end)/2;
+        mid=start+(end-start)/2;//optimised way
         
     }
     return -1;
@@ -50,5 +51,13 @@ int main()
    
     
     int index =BinarySearch(arr,size,key);
-    cout<<index;
+    if(index==-1)
+    {
+        cout<<"not found";
+    }else
+    {
+         cout<<"congratulation we found that at index : "<<index;
+    }
+    
+   
 }
