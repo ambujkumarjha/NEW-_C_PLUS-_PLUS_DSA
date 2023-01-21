@@ -10,6 +10,7 @@ void printArray(int arr[],int size)
     {
         cout<<arr[i]<<"\t";
     }
+    cout<<"\n";
     
     
 }
@@ -32,9 +33,10 @@ int BinarySearch(int arr[],int size,int key)
             end=mid-1;
         }
         mid=(start +end)/2;
-        
+
         
     }
+    return -1;
 
 }
 int main()
@@ -42,9 +44,11 @@ int main()
     int arr[1000],size,key;
     cout<<"Enter the Size:\n";
     cin>>size;
+     printArray(arr,size);
     cout<<"Enter the value: \n";
     cin>>key;
-    printArray(arr,size);
-    BinarySearch(arr,size,key);
+   
     
+    int index =BinarySearch(arr,size,key);
+    cout<<index;
 }
