@@ -76,4 +76,5 @@ int main()
     int L=LeftMostSearch(arr, size, key);
     int R=RightMostsearch(arr, size, key);
     cout<<"The Left & Right most occurance is: ("<<L<<","<<R<<")."<<endl;
+    cout<<"The total no of occurance is: "<<(R-L)+1<<endl;
 }
