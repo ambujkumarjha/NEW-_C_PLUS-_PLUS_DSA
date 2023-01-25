@@ -13,17 +13,7 @@ void Arrayprint(int arr[],int size)
         cout<<arr[i]<<"\t";
     }
 
-    // int i=0;
-    // while(i<size)
-    // {
-    //     cin>>arr[i];
-    //     i++;
-    // }
-    // while(i<size)
-    // {
-    //     cout<<arr[i]<<"\t";
-    //     i++;
-    // }
+    
 
 }
 int ArrayPivote(int arr[],int size)
