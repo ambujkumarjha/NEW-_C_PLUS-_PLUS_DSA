@@ -1,3 +1,6 @@
 {
-    "C_Cpp.Squiggles": "enable"
+    "C_Cpp.Squiggles": "enable",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
